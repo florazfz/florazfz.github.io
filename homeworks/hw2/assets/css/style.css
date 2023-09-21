@@ -78,7 +78,6 @@ div {
 div:hover.circle {
     opacity: 0.5
 }
-div:hover #second-row.circle{
+#second-row > .circle:hover{
     transform: scale(1.25)
 }
-
