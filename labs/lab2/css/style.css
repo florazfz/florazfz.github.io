@@ -1,0 +1,73 @@
+body {
+  font-family: Karla, sans-serif;
+  color: #484848;
+  margin: 0;
+  padding: 0;
+}
+/* remove bullet point list */
+nav ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+header {
+  background-color: #ff5a5f;
+  height: 80px;
+}
+/* fix logo that's bleeds out the red header */
+#logo {
+  height: 80px;
+}
+/* align links so only take up as much space as needed, NOT take default whole width of page */
+nav {
+  display: inline-block;
+  float: right;
+}
+nav li {
+  display: inline-block;
+  /* add space in btw words */
+  margin-left: 40px;
+  /* vertically center the links, links NOT entirely upper right */
+  line-height: 80px;
+}
+/* nav a selects all links inside nav */
+nav a {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  /* chage pntr --> can tell if pg is clickable when it turns into the index-finger-pointing cursor */
+  cursor: pointer;
+}
+nav a:visited {
+  color: #ffffff;
+  font-size: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+.content {
+  width: 900px;
+  margin: auto;
+}
+section {
+  padding: 20px;
+  border: 1px solid #cccccc;
+  margin-bottom: 35px;
+}
+section img {
+  width: 325px;
+}
+h1 {
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h2 {
+  font-size: 20px;
+}
+section p {
+  font-size: 15px;
+}
