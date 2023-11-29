@@ -1,0 +1,160 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Vina Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left-panel {
+    flex: .4;
+    background-color: #ceb493;; /* Left panel background color */
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+    
+
+.right-panel {
+    flex: 1;
+    background-color:#b8c4d5; /* Right panel background color */
+    padding: 20px;
+    height: 100%;
+}
+
+.left-panel h2 {
+    top: 60%;
+    width: 100%;
+    text-align: center;
+}
+
+.right-panel h2 {
+    top: 10%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.left-panel h2  {
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+}
+.left-panel p {
+    position: absolute;
+    bottom: 45%;
+    width: 80%;
+    text-align: center;
+    line-height: 1.5
+}
+
+.link-button {
+    position: absolute;
+    bottom: 35%;
+    left: 45%;
+    transform: translateX(-50%);
+    background-color: white; /* Button background color */
+    padding: 10px 10px;  /* Adjust padding for a rectangular button */
+    color: #ceb493;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none; /* Remove the default underline for anchor elements */
+    text-align: center;
+}
+
+.right-panel img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.griditem {
+    top: -2%;
+    position: relative;
+    width: 45%;
+    height: 41%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.griditem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.bubble {
+    display: none;
+    position: absolute;
+    background-color:  #fff;
+    color:  #ceb493;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: -20px; /* Adjust the vertical position */
+    left: -5px; /* Adjust the horizontal position */
+    width: 150px; /* Adjust the width of the bubble */
+}
+
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    margin-top: -15px; /* Adjust the margin to position the point */
+    width: 40px;
+    height: 30px;
+    background-color:  #fff;
+    color:  #ceb493;
+    border-radius: 50%;
+    z-index: -1;
+}
+.griditem p {
+    margin-top: 3px; /* Adjust the spacing between image and text */
+}
+
+.twirl-svg-container {
+    position: absolute;
+    bottom: 10%; /* Adjust the distance from the bottom */
+    left: 45%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    align-items: center;
+}
+
+.twirl-svg {
+    animation: twirl 2s infinite linear;
+}
+
+@keyframes twirl {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg); /* Rotate halfway (left) */
+    }
+    100% {
+        transform: rotate(360deg); /* Rotate back to the starting point (right) */
+    }
+}
+
+/* Apply the twirl animation to the SVG */
+.twirl-svg {
+    animation: twirl 2s infinite linear;
+}
+  
+ 
+
